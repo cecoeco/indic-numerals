@@ -419,7 +419,7 @@
 }
 
 #let urdu-to-arabic(number) = {
-  let digits = ("۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹")
+  let digits = ("٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩")
   let number = str(number)
   return number.replace(digits.at(0), "0")
                .replace(digits.at(1), "1")
@@ -458,7 +458,7 @@
     return tamil-to-arabic(number)
   } else if ("౦", "౧", "౨", "౩", "౪", "౫", "౬", "౭", "౮", "౯") in number {
     return telugu-to-arabic(number)
-  } else if ("۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹") in number {
+  } else if ("٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩") in number {
     return urdu-to-arabic(number)
   } else {
     return "Language not supported"
