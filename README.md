@@ -5,3 +5,15 @@
 ## indic-numerals
 
 <i>convert arabic numerals to indic numerals and vice versa</i>
+
+```typst
+#import "@preview/indic-numerals:0.1.0": arabic-to-indic, indic-to-arabic
+
+#indic-to-arabic("௦௧௨௩௪௫௬௭௮௯") // Output: 0123456789
+
+#arabic-to-indic("0123456789", "tamil") // Output: ௦௧௨௩௪௫௬௭௮௯
+
+#tamil-to-arabic("௦௧௨௩௪௫௬௭௮௯") // Output: 0123456789
+
+#arabic-to-tamil(0123456789) // Output: ௦௧௨௩௪௫௬௭௮௯
+```
