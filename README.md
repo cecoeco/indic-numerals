@@ -7,7 +7,7 @@
 <i>convert arabic numerals to indic numerals and vice versa</i>
 
 ```typst
-#import "@preview/indic-numerals:0.1.0": arabic-to-indic, indic-to-arabic
+#import "@preview/indic-numerals:0.1.0": arabic-to-indic, indic-to-arabic, tamil-to-arabic, arabic-to-tamil
 
 #indic-to-arabic("௦௧௨௩௪௫௬௭௮௯") // Output: 0123456789
 
